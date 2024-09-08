@@ -1,0 +1,202 @@
+/* Default Style */
+@import url(default.css);
+
+/* Fonts */
+@import url(fonts.css);
+
+/* Animations */
+@import url(animations.css);
+
+/* ---------------------------------------------------- */
+
+/* For Mobile Devices */
+@media screen and (max-width: 768px) {
+}
+
+/* For Tablets and Medium Devices */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* For Desktops  */
+@media screen and (min-width: 1024px) {
+    /* Header */
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Nav */
+    nav {
+        position: fixed;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+        margin: 10px 5%;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    nav .logo {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    nav .links ul {
+        display: flex;
+    }
+
+    nav .links ul li {
+        list-style: none;
+    }
+
+    nav .links ul li a {
+        margin: 0px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav .links ul li a:hover {
+        color: purple;
+    }
+
+    nav .action a {
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    nav .action a:hover {
+        background-color: purple;
+    }
+
+    /* Social buttons */
+    .social {
+        background-color: #fff;
+        position: fixed;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        margin: 3px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        -webkit-animation: fade-in-bottom 800ms
+            cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-bottom 800ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+
+    .social a {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    .social a:hover {
+        background-color: #00000020;
+    }
+
+    .social a img {
+        width: 32px;
+    }
+
+    /* Main */
+    main {
+        width: 100%;
+    }
+
+    .about {
+        padding: 5%;
+    }
+
+    .about h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .projects {
+        padding: 5%;
+    }
+
+    .projects h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    /* Contacto Form */
+    .contact {
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .contact form {
+        background: #ffff;
+        border-radius: 5px;
+    }
+
+    .contact .input {
+        display: flex;
+        flex-direction: column;
+        padding: 4% 5%;
+        width: 45vw;
+    }
+
+    .contact .input label {
+        color: #000;
+        padding: 5px 0px;
+        font-weight: bold;
+    }
+
+    .contact .input button {
+        background: radial-gradient(circle at center, #f00, #00f);
+        padding: 10px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition:
+            background-color 0.5s ease-in-out,
+            color 0.5s ease-in-out;
+    }
+
+    .contact .input button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #444444;
+        padding: 2% 5%;
+    }
+
+    footer .copy {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        padding: 10px;
+        border-top: 1px solid #fff;
+    }
+
+    footer .copy a {
+        color: #fff;
+        font-weight: bold;
+    }
+}
